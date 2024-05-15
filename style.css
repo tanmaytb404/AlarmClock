@@ -1,0 +1,121 @@
+body{
+    background-color: #222;
+    overflow: hidden;
+    height: 100vh;
+    font-family: ubuntu;
+}
+.alarmContainer{
+    width: 30%;
+    height: calc(100vh - 40px);
+    border: 1px solid wheat;
+    background-image: linear-gradient(to bottom right, #FDFCFB, #E2D1C3);
+    border-radius: 20px;
+    margin-left: 35vw;
+    margin-right: 35vw;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-top: 2em;
+}
+.header{
+    height: 10%;
+    border-bottom: 2px solid darkgrey;
+    border-radius: 12px;
+    font-size: 2em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.currentTime{
+    height: 15%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin: 2%;
+    /* border: 1px solid #222; */
+}
+
+.alarm{
+    position: relative;
+    height: calc(100vh - 30%);
+    margin-top: 5%;
+}
+.alarm p{
+    font-size: 1.2em;
+    margin-left: 0.8em;
+}
+.alarmListContainer span{
+    display: flex;
+    justify-content: center;
+    margin-top: 30%;
+    opacity: 0.6;
+}
+.alarmListContainer li{
+    width: 100%;
+    padding-left: 2em;
+    border-bottom: 2px solid darkgray;
+    border-radius: 12px;    
+    margin-top: 0.5em;
+}
+
+.alarmListContainer li .alarm-time{
+    align-items: center;
+    margin-top: 0.2em;
+}
+
+.alarmList{
+    list-style: none;
+    padding: 0;
+}
+
+.alarmList .top-section, .bottom-section{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 20px;
+    margin-left: -10px;
+    margin-bottom: 2px;
+    font-size: 1.2em;
+    }
+
+.addAlarm{
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+}    
+
+.myModal{
+    width: fit-content;
+    height: fit-content;
+}
+
+.modal-body{
+    display: flex;
+}
+
+.modal-body div, .form-select{
+    /* border: 1px solid hotpink; */
+    width: fit-content;
+    height: fit-content;
+    margin: 2.5%;
+    /* display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; */
+}
+
+.myToast{
+    background-image: linear-gradient(to bottom right, #FDFCFB, #E2D1C3);
+    font-size: 1em;
+}
+
+@media screen and (max-width:1000px){
+    .container{
+      width: 60% !important;
+      margin-left: auto;
+      margin-right: auto;
+  }
+}
